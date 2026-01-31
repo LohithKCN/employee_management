@@ -29,7 +29,7 @@ public class EmployeeController {
     }
 
 
-    // create
+    // create // where it will post the data into database
     @PostMapping("/")
     public Employee addEmployee(@Valid @RequestBody EmployeeDto employee) {
         return employeeService.saveEmployee(employee);
